@@ -9,7 +9,7 @@ namespace SignNumber
         {
             var number = int.Parse(Console.ReadLine());
             var intType = TypeCheck(number);
-            PrintSign(intType);
+            PrintSign(intType, number);
         }
 
         static string TypeCheck(int number)
@@ -31,9 +31,9 @@ namespace SignNumber
             return type;
         }
 
-        static void PrintSign(string intType)
+        static void PrintSign(string intType, int number)
         {
-            Console.WriteLine($"The number 2 is {intType}.");
+            Console.WriteLine($"The number {number} is {intType}.");
         }
     }
 }
